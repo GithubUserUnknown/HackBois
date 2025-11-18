@@ -1,0 +1,38 @@
+{
+    "SUMO_CONFIG": [
+        "sumo-gui",
+        "-c", "Grid-1.sumocfg",
+        "--step-length", "1.0",
+        "--delay", "100"
+    ],
+    "NET_FILE": "grid3x3.net.xml",
+    "ROUTE_FILE": "routes.rou.xml",
+    "DETECTOR_FILE": "lane_area_detectors.add.xml",
+    "EPISODE_DURATION": 3600,
+    "CONGESTION_THRESHOLD": 0.7,
+    "DETECTOR_LENGTH": 80,
+    "YELLOW_PHASE_DURATION": 3,
+    "MIN_PHASE_DURATION": 6,
+    "MAX_PHASE_DURATION": 30,
+    "LEARNING_RATE": 0.0003,
+    "GAMMA": 0.99,
+    "BATCH_SIZE": 64,
+    "MEMORY_SIZE": 10000,
+    "EPSILON_START": 1.0,
+    "EPSILON_END": 0.01,
+    "EPSILON_DECAY": 0.995,
+    "TARGET_UPDATE": 10,
+    "PPO_EPOCHS": 4,
+    "PPO_CLIP": 0.2,
+    "PPO_ENTROPY_COEF": 0.01,
+    "PRIORITY_WEIGHTS": {
+        "ambulance": 10,
+        "firetruck": 10,
+        "police": 7,
+        "truck": 4,
+        "bus": 4,
+        "car": 3,
+        "bike": 1,
+        "auto": 2
+    }
+}

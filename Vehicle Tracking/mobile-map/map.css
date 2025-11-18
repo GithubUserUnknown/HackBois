@@ -1,0 +1,20 @@
+/* Camera marker icons */
+.camera-marker {
+    background-color: #1e88e5;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 4px #00000088;
+}
+
+/* Highlight animation */
+.highlight {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { background-color: #ffeb3b; }
+    50% { background-color: #f44336; }
+    100% { background-color: #ffeb3b; }
+}

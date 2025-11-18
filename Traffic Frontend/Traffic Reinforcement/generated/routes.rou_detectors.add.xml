@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<additional>
+  <laneAreaDetector id="det_s_b_0_n20_0" lane="s_b_0_n20_0" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_b_0_n20_1" lane="s_b_0_n20_1" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_b_1_n21_0" lane="s_b_1_n21_0" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_b_1_n21_1" lane="s_b_1_n21_1" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_b_2_n22_0" lane="s_b_2_n22_0" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_b_2_n22_1" lane="s_b_2_n22_1" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_e_0_n02_0" lane="s_e_0_n02_0" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_e_0_n02_1" lane="s_e_0_n02_1" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_e_1_n12_0" lane="s_e_1_n12_0" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_e_1_n12_1" lane="s_e_1_n12_1" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_e_2_n22_0" lane="s_e_2_n22_0" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_e_2_n22_1" lane="s_e_2_n22_1" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_n_0_n00_0" lane="s_n_0_n00_0" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_n_0_n00_1" lane="s_n_0_n00_1" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_n_1_n01_0" lane="s_n_1_n01_0" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_n_1_n01_1" lane="s_n_1_n01_1" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_n_2_n02_0" lane="s_n_2_n02_0" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_n_2_n02_1" lane="s_n_2_n02_1" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_w_0_n00_0" lane="s_w_0_n00_0" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_w_0_n00_1" lane="s_w_0_n00_1" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_w_1_n10_0" lane="s_w_1_n10_0" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_w_1_n10_1" lane="s_w_1_n10_1" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_w_2_n20_0" lane="s_w_2_n20_0" pos="50" length="10" freq="60" file="detector_output.xml" />
+  <laneAreaDetector id="det_s_w_2_n20_1" lane="s_w_2_n20_1" pos="50" length="10" freq="60" file="detector_output.xml" />
+</additional>

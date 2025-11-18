@@ -1,0 +1,112 @@
+# ==================== SUMO TRAFFIC LIGHT RL CONFIGURATION ====================
+# Configuration file for Advanced RL-Based Traffic Signal Control
+
+# ==================== NETWORK FILES ====================
+network:
+  net_file: "grid3x3.net.xml"
+  route_file: "routes.rou.xml"
+  detector_file: "lane_area_detectors_70m.add.xml"  # 70m detectors on inbound lanes
+  sumocfg_file: "Grid-1.sumocfg"
+
+  # Auto-detect intersections from network file
+  auto_detect_intersections: true
+  # Manual override (only used if auto_detect_intersections is false)
+  manual_intersections: ["n00", "n01", "n02", "n10", "n11", "n12", "n20", "n21", "n22"]
+
+# ==================== SIMULATION SETTINGS ====================
+simulation:
+  episode_duration: 7200  # seconds (2 hours for more training samples)
+  congestion_threshold: 0.7  # 70% congestion triggers reset
+  detector_length: 80  # meters
+  yellow_phase_duration: 3  # seconds
+  step_length: 1.0  # simulation step in seconds
+  gui_mode: false  # true for sumo-gui, false for sumo
+  gui_delay: 100  # milliseconds (only for GUI mode)
+  
+# ==================== TRAFFIC SIGNAL CONTROL ====================
+traffic_signal:
+  min_phase_duration: 6  # seconds
+  max_phase_duration: 45  # seconds (increased for better traffic flow)
+  allow_phase_keep: true  # Allow agents to keep current phase
+  dynamic_duration: true  # Allow agents to select phase duration
+
+  # Emergency vehicle priority
+  ambulance_prioritized: true  # Enable instant green for ambulances
+  ambulance_clear_time: 5  # seconds to wait after ambulance passes
+  ambulance_prediction_timeout: 30  # seconds to wait for predicted ambulance at next intersection
+  
+# ==================== RL TRAINING PARAMETERS ====================
+training:
+  # General RL parameters
+  learning_rate: 0.0003
+  gamma: 0.99  # discount factor
+  batch_size: 64
+  memory_size: 10000
+  
+  # DQN specific
+  epsilon_start: 1.0
+  epsilon_end: 0.01
+  epsilon_decay: 0.995
+  target_update: 10  # episodes
+  
+  # PPO specific
+  ppo_epochs: 4
+  ppo_clip: 0.2
+  ppo_entropy_coef: 0.01
+  
+  # Network architecture
+  hidden_size: 256
+  dropout: 0.2
+  
+  # Training settings
+  num_episodes: 100
+  save_interval: 10  # save model every N episodes
+  eval_episodes: 5
+  
+# ==================== VEHICLE PRIORITY WEIGHTS ====================
+priority_weights:
+  ambulance: 10
+  firetruck: 10
+  police: 7
+  truck: 4
+  bus: 4
+  car: 3
+  auto: 2
+  bike: 1
+  bicycle: 1
+
+# ==================== REWARD FUNCTION WEIGHTS ====================
+reward_weights:
+  emergency_waiting: -5.0  # Heavy penalty for emergency vehicle waiting
+  normal_waiting: -0.1  # Penalty for normal vehicle waiting
+  throughput: 0.5  # Reward for vehicles completing trips
+  speed: 0.2  # Reward for maintaining speed
+  queue: -0.3  # Penalty for queue length
+  pressure: -0.2  # Penalty for pressure (imbalance)
+  phase_change: -2.0  # Penalty for frequent phase changes
+  min_phase_violation: -2.0  # Penalty for changing phase too quickly
+
+# ==================== LOGGING & EXPERIMENT TRACKING ====================
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  log_file: "logs/training.log"
+  console_output: true
+  
+experiment:
+  use_tensorboard: true
+  tensorboard_dir: "runs"
+  save_dir: "models"
+  track_metrics:
+    - "episode_reward"
+    - "total_waiting_time"
+    - "total_throughput"
+    - "emergency_delays"
+    - "avg_speed"
+    - "congestion_level"
+    - "loss"
+
+# ==================== DEVICE SETTINGS ====================
+device:
+  use_cuda: true  # Use GPU if available
+  cuda_device: 0  # GPU device ID
+

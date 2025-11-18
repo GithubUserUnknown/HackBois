@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+torch
+torchvision
+ultralytics
+Pillow
+numpy
+faiss-cpu
+pyyaml
+torchreid

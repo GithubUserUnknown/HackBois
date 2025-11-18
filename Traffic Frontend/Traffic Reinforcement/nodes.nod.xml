@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes>
+  <!-- outer spawn nodes (left, center, right columns) -->
+  <node id="s_w_0" x="0"   y="600" type="priority"/>
+  <node id="s_w_1" x="0"   y="300" type="priority"/>
+  <node id="s_w_2" x="0"   y="0"   type="priority"/>
+
+  <!-- outer spawn nodes (right) -->
+  <node id="s_e_0" x="800" y="600" type="priority"/>
+  <node id="s_e_1" x="800" y="300" type="priority"/>
+  <node id="s_e_2" x="800" y="0"   type="priority"/>
+
+  <!-- outer spawn nodes (top/bottom) -->
+  <node id="s_n_0" x="200" y="800" type="priority"/>
+  <node id="s_n_1" x="400" y="800" type="priority"/>
+  <node id="s_n_2" x="600" y="800" type="priority"/>
+
+  <node id="s_b_0" x="200" y="-200" type="priority"/>
+  <node id="s_b_1" x="400" y="-200" type="priority"/>
+  <node id="s_b_2" x="600" y="-200" type="priority"/>
+
+  <!-- 3x3 intersections center grid: coordinates spaced 200 units -->
+  <node id="n00" x="200" y="600" type="traffic_light"/>
+  <node id="n01" x="400" y="600" type="traffic_light"/>
+  <node id="n02" x="600" y="600" type="traffic_light"/>
+
+  <node id="n10" x="200" y="300" type="traffic_light"/>
+  <node id="n11" x="400" y="300" type="traffic_light"/>
+  <node id="n12" x="600" y="300" type="traffic_light"/>
+
+  <node id="n20" x="200" y="0"   type="traffic_light"/>
+  <node id="n21" x="400" y="0"   type="traffic_light"/>
+  <node id="n22" x="600" y="0"   type="traffic_light"/>
+</nodes>

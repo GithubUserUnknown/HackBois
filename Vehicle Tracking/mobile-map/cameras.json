@@ -1,0 +1,17 @@
+{
+  "cam_A1": {
+    "gps": [21.229001, 81.678221],
+    "direction": "east",
+    "image_path": "../camera_feeds/cam_A1/3.jpg"
+  },
+  "cam_B1": {
+    "gps": [21.228510, 81.678701],
+    "direction": "north",
+    "image_path": "../camera_feeds/cam_B1/5.jpg"
+  },
+  "cam_C1": {
+    "gps": [21.227900, 81.679120],
+    "direction": "north-east",
+    "image_path": "../camera_feeds/cam_C1/3.jpg"
+  }
+}

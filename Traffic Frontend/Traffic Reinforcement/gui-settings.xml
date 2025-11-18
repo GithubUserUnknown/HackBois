@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewsettings>
+    <scheme name="real world" />
+    <background color="white" />
+    <viewport zoom="75" x="0" y="0" />
+    <delay value="0" />
+    <edges laneWidthExaggeration="2.0" showLaneDirection="true" laneShowBorders="true" />
+    <vehicles vehicleQuality="2" showBlinker="true" showMinGap="true" showRoute="true" />
+    <junctions showLinkTLIndex="true" showLinkTLState="true" />
+    <detectors showDetectors="true" />
+    <pois showSize="true" />
+    <polys showSize="true" />
+    <gui showToolTips="true" />
+</viewsettings>

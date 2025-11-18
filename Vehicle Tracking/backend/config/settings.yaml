@@ -1,0 +1,19 @@
+models:
+  yolo_model: "models/yolo/yolo11s.pt"
+  reid_model: "models/reid/vehicle_reid_model.pth"
+
+faiss:
+  index_path: "embeddings/faiss_index.bin"
+  meta_path: "embeddings/metadata.json"
+  embedding_dim: 2048
+
+camera_config: "config/cameras.json"
+
+filters:
+  max_distance_meters: 2000
+  direction_tolerance_deg: 60
+  time_window_seconds: 180
+
+similarity_threshold: 0.55
+
+device: "cpu"

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- =========================================================
+  Lane Area Detectors for 3x3 Grid Network
+  Created: 2025-11-07
+  Description: 70m detectors on all inbound lanes to each intersection
+               Positioned at the END of lanes (near intersection)
+               For lane length ~179m: detector from 109m to 179m (last 70m)
+========================================================== -->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+
+    <!-- ====================== INTERSECTION n00 ====================== -->
+    <!-- Inbound lanes to n00 - detectors at END of lane (last 70m before intersection) -->
+    <!-- Each edge has 2 lanes (index 0 and 1) -->
+    <laneAreaDetector id="det_n01_n00_0" lane="n01_n00_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n01_n00_1" lane="n01_n00_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n10_n00_0" lane="n10_n00_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n10_n00_1" lane="n10_n00_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_n_0_n00_0" lane="s_n_0_n00_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_n_0_n00_1" lane="s_n_0_n00_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_w_0_n00_0" lane="s_w_0_n00_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_w_0_n00_1" lane="s_w_0_n00_1" pos="-70" length="70" freq="1" file="NUL"/>
+
+    <!-- ====================== INTERSECTION n01 ====================== -->
+    <!-- Inbound lanes to n01 -->
+    <laneAreaDetector id="det_n00_n01_0" lane="n00_n01_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n00_n01_1" lane="n00_n01_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n02_n01_0" lane="n02_n01_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n02_n01_1" lane="n02_n01_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n11_n01_0" lane="n11_n01_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n11_n01_1" lane="n11_n01_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_n_1_n01_0" lane="s_n_1_n01_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_n_1_n01_1" lane="s_n_1_n01_1" pos="-70" length="70" freq="1" file="NUL"/>
+
+    <!-- ====================== INTERSECTION n02 ====================== -->
+    <!-- Inbound lanes to n02 -->
+    <laneAreaDetector id="det_n01_n02_0" lane="n01_n02_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n01_n02_1" lane="n01_n02_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n12_n02_0" lane="n12_n02_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n12_n02_1" lane="n12_n02_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_n_2_n02_0" lane="s_n_2_n02_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_n_2_n02_1" lane="s_n_2_n02_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_e_0_n02_0" lane="s_e_0_n02_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_e_0_n02_1" lane="s_e_0_n02_1" pos="-70" length="70" freq="1" file="NUL"/>
+
+    <!-- ====================== INTERSECTION n10 ====================== -->
+    <!-- Inbound lanes to n10 -->
+    <laneAreaDetector id="det_n00_n10_0" lane="n00_n10_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n00_n10_1" lane="n00_n10_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n11_n10_0" lane="n11_n10_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n11_n10_1" lane="n11_n10_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n20_n10_0" lane="n20_n10_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n20_n10_1" lane="n20_n10_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_w_1_n10_0" lane="s_w_1_n10_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_w_1_n10_1" lane="s_w_1_n10_1" pos="-70" length="70" freq="1" file="NUL"/>
+
+    <!-- ====================== INTERSECTION n11 ====================== -->
+    <!-- Inbound lanes to n11 (center intersection - 4 inbound lanes) -->
+    <laneAreaDetector id="det_n01_n11_0" lane="n01_n11_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n01_n11_1" lane="n01_n11_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n10_n11_0" lane="n10_n11_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n10_n11_1" lane="n10_n11_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n12_n11_0" lane="n12_n11_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n12_n11_1" lane="n12_n11_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n21_n11_0" lane="n21_n11_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n21_n11_1" lane="n21_n11_1" pos="-70" length="70" freq="1" file="NUL"/>
+
+    <!-- ====================== INTERSECTION n12 ====================== -->
+    <!-- Inbound lanes to n12 -->
+    <laneAreaDetector id="det_n02_n12_0" lane="n02_n12_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n02_n12_1" lane="n02_n12_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n11_n12_0" lane="n11_n12_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n11_n12_1" lane="n11_n12_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n22_n12_0" lane="n22_n12_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n22_n12_1" lane="n22_n12_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_e_1_n12_0" lane="s_e_1_n12_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_e_1_n12_1" lane="s_e_1_n12_1" pos="-70" length="70" freq="1" file="NUL"/>
+
+    <!-- ====================== INTERSECTION n20 ====================== -->
+    <!-- Inbound lanes to n20 -->
+    <laneAreaDetector id="det_n10_n20_0" lane="n10_n20_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n10_n20_1" lane="n10_n20_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n21_n20_0" lane="n21_n20_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n21_n20_1" lane="n21_n20_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_b_0_n20_0" lane="s_b_0_n20_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_b_0_n20_1" lane="s_b_0_n20_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_w_2_n20_0" lane="s_w_2_n20_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_w_2_n20_1" lane="s_w_2_n20_1" pos="-70" length="70" freq="1" file="NUL"/>
+
+    <!-- ====================== INTERSECTION n21 ====================== -->
+    <!-- Inbound lanes to n21 -->
+    <laneAreaDetector id="det_n11_n21_0" lane="n11_n21_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n11_n21_1" lane="n11_n21_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n20_n21_0" lane="n20_n21_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n20_n21_1" lane="n20_n21_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n22_n21_0" lane="n22_n21_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n22_n21_1" lane="n22_n21_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_b_1_n21_0" lane="s_b_1_n21_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_b_1_n21_1" lane="s_b_1_n21_1" pos="-70" length="70" freq="1" file="NUL"/>
+
+    <!-- ====================== INTERSECTION n22 ====================== -->
+    <!-- Inbound lanes to n22 -->
+    <laneAreaDetector id="det_n12_n22_0" lane="n12_n22_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n12_n22_1" lane="n12_n22_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n21_n22_0" lane="n21_n22_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_n21_n22_1" lane="n21_n22_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_b_2_n22_0" lane="s_b_2_n22_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_b_2_n22_1" lane="s_b_2_n22_1" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_e_2_n22_0" lane="s_e_2_n22_0" pos="-70" length="70" freq="1" file="NUL"/>
+    <laneAreaDetector id="det_s_e_2_n22_1" lane="s_e_2_n22_1" pos="-70" length="70" freq="1" file="NUL"/>
+
+</additional>
+
