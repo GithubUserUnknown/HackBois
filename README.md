@@ -254,6 +254,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
+This project was developed during the **HackBois 2025 Hackathon** conducted at SSIMPT Bhilai. We would like to thank the organizers for providing an excellent platform to innovate and collaborate.
+
 - **SUMO** (Simulation of Urban MObility) - Traffic simulation platform
 - **PyTorch** - Deep learning framework
 - **FastAPI** - High-performance API framework
